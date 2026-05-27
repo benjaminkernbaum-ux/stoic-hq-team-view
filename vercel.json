@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "name": "stoic-hq-team-view",
+  "builds": [
+    {
+      "src": "src/dashboard/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/team",
+      "dest": "/src/dashboard/team-view.html"
+    },
+    {
+      "src": "/",
+      "dest": "/src/dashboard/team-view.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/src/dashboard/$1"
+    }
+  ]
+}

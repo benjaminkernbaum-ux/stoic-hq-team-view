@@ -1,0 +1,73 @@
+{
+  "episode_id": "EP002",
+  "title": "O Segredo de Luna",
+  "created_at": "2026-05-27T12:31:32.910Z",
+  "phases": {
+    "concept": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null
+    },
+    "script": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null
+    },
+    "storyboard": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null
+    },
+    "image_generation": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "images_generated": 0
+    },
+    "video_generation": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "clips_generated": 0,
+      "clips_selected": 0
+    },
+    "voice_generation": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "lines_generated": 0
+    },
+    "music_generation": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "tracks_generated": 0
+    },
+    "composition": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null
+    },
+    "thumbnail": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null
+    },
+    "upload": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "video_id": null
+    }
+  },
+  "costs": {
+    "images": 0,
+    "video": 0,
+    "voices": 0,
+    "music": 0,
+    "sfx": 0,
+    "total_usd": 0,
+    "total_brl": 0
+  },
+  "api_calls": []
+}

@@ -1,0 +1,71 @@
+{
+  "channel": {
+    "name": "DESENHOS ANIMADOS THIAGERA",
+    "language": "pt-BR",
+    "category": "Film & Animation",
+    "categoryId": 1,
+    "description": "Canal de desenhos animados brasileiros produzidos com as mais avançadas tecnologias de Inteligência Artificial",
+    "keywords": ["desenho animado", "animação", "cartoon", "brasil", "infantil", "IA", "AI animation"],
+    "defaultPrivacy": "private"
+  },
+  "production": {
+    "resolution": "1920x1080",
+    "frameRate": 24,
+    "codec": "h264",
+    "container": "mp4",
+    "audioBitrate": "384k",
+    "audioCodec": "aac",
+    "audioSampleRate": 48000,
+    "targetDuration": {
+      "longForm": { "min": 420, "max": 900 },
+      "shorts": { "min": 15, "max": 60 }
+    },
+    "thumbnail": {
+      "width": 1280,
+      "height": 720,
+      "format": "png",
+      "maxSize": "2MB"
+    }
+  },
+  "apis": {
+    "fal": {
+      "defaultVideoModel": "fal-ai/kling-video/v3/pro/text-to-video",
+      "defaultImageModel": "fal-ai/flux/dev",
+      "economyVideoModel": "fal-ai/wan/v2.7/text-to-video"
+    },
+    "elevenlabs": {
+      "defaultModel": "eleven_multilingual_v2",
+      "flashModel": "eleven_flash_v2_5",
+      "defaultVoiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.5,
+        "use_speaker_boost": true
+      }
+    },
+    "higgsfield": {
+      "defaultModel": "cinema-studio-3"
+    },
+    "stableAudio": {
+      "defaultDuration": 120,
+      "defaultFormat": "mp3"
+    }
+  },
+  "costs": {
+    "currency": "BRL",
+    "usdToBrl": 5.20,
+    "monthlyBudget": 1000,
+    "alertThreshold": 0.8
+  },
+  "upload": {
+    "schedule": {
+      "longForm": { "day": "wednesday", "time": "18:00" },
+      "shorts": { "days": ["monday", "thursday", "saturday"], "time": "12:00" }
+    },
+    "seo": {
+      "titlePrefix": "",
+      "hashtagsDefault": ["#DesenhoAnimado", "#Animação", "#Cartoon", "#THIAGERA"],
+      "descriptionTemplate": "🎬 {title}\n\n{description}\n\n━━━━━━━━━━━━━━━━━━━━━━\n🔔 Inscreva-se no canal!\n👍 Deixe seu like!\n💬 Comente o que achou!\n━━━━━━━━━━━━━━━━━━━━━━\n\n{hashtags}"
+    }
+  }
+}

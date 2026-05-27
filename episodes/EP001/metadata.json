@@ -1,0 +1,80 @@
+{
+  "episode": {
+    "id": "EP001",
+    "title": "O Despertar de Pixel",
+    "series": "As Aventuras de Tiago e Luna",
+    "number": 1,
+    "season": 1
+  },
+  "synopsis": "Tiago encontra um cubo misterioso brilhante no quintal da casa de Dona Celeste. Ao tocá-lo, a criatura mágica Pixel desperta e começa a flutuar e brilhar. Luna, usando seus óculos especiais, descobre que Pixel vem de um mundo digital escondido. Juntos, eles precisam proteger Pixel de uma sombra misteriosa que surge ao anoitecer.",
+  "scenes": [
+    {
+      "number": 1,
+      "title": "O Quintal Mágico",
+      "duration": 90,
+      "description": "Tiago brinca no quintal de Dona Celeste quando nota uma luz estranha vindo de trás da árvore grande.",
+      "characters": ["char_001", "char_004"],
+      "mood": "Curioso, misterioso",
+      "visualStyle": "Dia ensolarado, cores quentes, quintal brasileiro com plantas tropicais"
+    },
+    {
+      "number": 2,
+      "title": "A Descoberta",
+      "duration": 120,
+      "description": "Tiago encontra o cubo brilhante enterrado na terra. Ao tocar, Pixel acorda com uma explosão de luz colorida.",
+      "characters": ["char_001", "char_003"],
+      "mood": "Surpresa, maravilhamento",
+      "visualStyle": "Explosão de cores ciano e roxo, efeitos de luz mágica"
+    },
+    {
+      "number": 3,
+      "title": "Luna Investiga",
+      "duration": 110,
+      "description": "Luna chega correndo e analisa Pixel com seus óculos. Descobre que ele emite uma frequência digital única.",
+      "characters": ["char_001", "char_002", "char_003"],
+      "mood": "Científico, empolgação",
+      "visualStyle": "Efeitos de scan digital sobrepostos, dados holográficos"
+    },
+    {
+      "number": 4,
+      "title": "Primeiros Passos",
+      "duration": 100,
+      "description": "Pixel tenta se comunicar. Faz sons engraçados e come o controle remoto da TV. Zeca aparece e se assusta.",
+      "characters": ["char_001", "char_002", "char_003", "char_006"],
+      "mood": "Cômico, leve",
+      "visualStyle": "Interior da casa de Dona Celeste, aconchegante, cores quentes"
+    },
+    {
+      "number": 5,
+      "title": "A Sombra se Move",
+      "duration": 80,
+      "description": "Ao anoitecer, uma sombra misteriosa se forma ao redor da casa. Pixel começa a tremer e mudar de cor para vermelho.",
+      "characters": ["char_003", "char_005"],
+      "mood": "Tenso, misterioso",
+      "visualStyle": "Pôr do sol dramático, sombras longas, atmosfera tensa"
+    },
+    {
+      "number": 6,
+      "title": "Unidos",
+      "duration": 100,
+      "description": "Dona Celeste revela que conhece as lendas sobre criaturas digitais. O grupo se une para proteger Pixel. A sombra recua... por enquanto.",
+      "characters": ["char_001", "char_002", "char_003", "char_004", "char_006"],
+      "mood": "Esperançoso, determinado",
+      "visualStyle": "Noite estrelada, brilho de Pixel ilumina todos, composição épica"
+    }
+  ],
+  "totalDuration": 600,
+  "music": {
+    "theme": "Aventura mágica, orquestral leve com elementos eletrônicos",
+    "mood_per_scene": [
+      "Tranquilo e curioso",
+      "Mágico e grandioso",
+      "Científico e tecnológico",
+      "Cômico e leve",
+      "Tenso e sombrio",
+      "Épico e esperançoso"
+    ]
+  },
+  "status": "draft",
+  "created_at": "2026-05-26"
+}

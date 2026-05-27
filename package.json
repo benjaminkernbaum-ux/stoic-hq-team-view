@@ -1,0 +1,31 @@
+{
+  "name": "thiagera-studio",
+  "version": "1.0.0",
+  "description": "🎬 DESENHOS ANIMADOS THIAGERA — Estúdio de Animação com IA para YouTube",
+  "type": "module",
+  "main": "src/backend/server.js",
+  "scripts": {
+    "dev": "node src/backend/server.js",
+    "dashboard": "npx http-server src/dashboard -p 3000 -o",
+    "start": "node src/backend/server.js",
+    "generate": "node scripts/generate-episode.js",
+    "upload": "node scripts/batch-upload.js",
+    "init-ep": "node scripts/init-episode.js",
+    "ops": "start OPERACIONAL-DE-PRODUCAO.md"
+  },
+  "keywords": ["animation", "ai", "youtube", "cartoon", "thiagera"],
+  "license": "MIT",
+  "dependencies": {
+    "@fal-ai/client": "^1.2.0",
+    "better-sqlite3": "^11.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "googleapis": "^144.0.0",
+    "node-fetch": "^3.3.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

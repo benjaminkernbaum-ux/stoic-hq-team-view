@@ -1,0 +1,54 @@
+{
+  "episode": {
+    "id": "EP002",
+    "title": "O Segredo de Luna",
+    "series": "As Aventuras de Tiago e Luna",
+    "number": 2,
+    "season": 1
+  },
+  "synopsis": "[PREENCHER] Sinopse do episódio em 2-3 frases.",
+  "scenes": [
+    {
+      "number": 1,
+      "title": "[Título da Cena]",
+      "duration": 90,
+      "description": "[Descrição visual da cena]",
+      "characters": [
+        "char_001"
+      ],
+      "mood": "[Emoção da cena]",
+      "visualStyle": "[Estilo visual e iluminação]",
+      "shots": [
+        {
+          "type": "WIDE",
+          "description": "Establishing shot",
+          "duration": 5
+        },
+        {
+          "type": "MEDIUM",
+          "description": "[Ação principal]",
+          "duration": 8
+        },
+        {
+          "type": "CLOSE-UP",
+          "description": "[Reação do personagem]",
+          "duration": 3
+        }
+      ]
+    }
+  ],
+  "totalDuration": 600,
+  "music": {
+    "theme": "[Tema musical do episódio]",
+    "mood_per_scene": []
+  },
+  "production": {
+    "status": "draft",
+    "created_at": "2026-05-27",
+    "estimated_cost_brl": 68,
+    "actual_cost_brl": 0,
+    "video_clips_generated": 0,
+    "video_clips_selected": 0,
+    "voice_lines_generated": 0
+  }
+}

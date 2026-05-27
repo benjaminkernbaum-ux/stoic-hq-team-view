@@ -1,0 +1,124 @@
+{
+  "characters": [
+    {
+      "id": "char_001",
+      "name": "Tiago",
+      "role": "Protagonista",
+      "age": 10,
+      "description": "Menino brasileiro curioso e aventureiro, cabelo cacheado castanho, olhos grandes e expressivos, camiseta amarela com estrela, bermuda azul, tênis vermelho",
+      "personality": "Corajoso, criativo, levemente impulsivo, coração enorme",
+      "voiceProfile": {
+        "type": "Menino jovem, entusiasmado",
+        "elevenlabsVoiceId": null,
+        "settings": {
+          "stability": 0.4,
+          "similarity_boost": 0.8,
+          "style": 0.7
+        }
+      },
+      "visualPrompt": "young Brazilian boy, 10 years old, curly brown hair, big expressive brown eyes, yellow t-shirt with star, blue shorts, red sneakers, cartoon style, friendly and adventurous look",
+      "referenceImages": [],
+      "loraModel": null
+    },
+    {
+      "id": "char_002",
+      "name": "Luna",
+      "role": "Melhor amiga / Co-protagonista",
+      "age": 10,
+      "description": "Menina inteligente e determinada, cabelo liso preto com franja, óculos redondos roxos, vestido lilás com detalhes de estrelas, mochila com patches",
+      "personality": "Intelectual, leal, organizada, adora ciência e mistérios",
+      "voiceProfile": {
+        "type": "Menina inteligente, confiante",
+        "elevenlabsVoiceId": null,
+        "settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.8,
+          "style": 0.6
+        }
+      },
+      "visualPrompt": "young Brazilian girl, 10 years old, straight black hair with bangs, round purple glasses, lilac dress with star details, backpack with patches, cartoon style, smart and confident look",
+      "referenceImages": [],
+      "loraModel": null
+    },
+    {
+      "id": "char_003",
+      "name": "Pixel",
+      "role": "Mascote / Alívio cômico",
+      "age": null,
+      "description": "Pequena criatura mágica em forma de cubo arredondado, brilha em tons de ciano e roxo, olhos enormes e fofos, pode flutuar e mudar de cor conforme a emoção",
+      "personality": "Engraçado, atrapalhado, leal, come coisas eletrônicas",
+      "voiceProfile": {
+        "type": "Criatura fofa, sons eletrônicos misturados com fala",
+        "elevenlabsVoiceId": null,
+        "settings": {
+          "stability": 0.3,
+          "similarity_boost": 0.6,
+          "style": 0.9
+        }
+      },
+      "visualPrompt": "cute magical cube creature, rounded edges, glowing cyan and purple, enormous adorable eyes, floating, cartoon mascot style, Kirby meets digital pet, kawaii design",
+      "referenceImages": [],
+      "loraModel": null
+    },
+    {
+      "id": "char_004",
+      "name": "Dona Celeste",
+      "role": "Mentora / Avó",
+      "age": 68,
+      "description": "Avó sábia e carismática, cabelo grisalho preso em coque com flores, óculos de meia-lua dourados, avental colorido com bordados, sempre com um sorriso acolhedor",
+      "personality": "Sábia, amorosa, conta histórias, conhece segredos antigos",
+      "voiceProfile": {
+        "type": "Idosa carinhosa, voz macia e sábia",
+        "elevenlabsVoiceId": null,
+        "settings": {
+          "stability": 0.7,
+          "similarity_boost": 0.8,
+          "style": 0.4
+        }
+      },
+      "visualPrompt": "elderly Brazilian grandmother, warm smile, gray hair in bun with flowers, golden half-moon glasses, colorful embroidered apron, cartoon style, wise and loving grandmother character",
+      "referenceImages": [],
+      "loraModel": null
+    },
+    {
+      "id": "char_005",
+      "name": "Sombrix",
+      "role": "Antagonista",
+      "age": null,
+      "description": "Entidade de sombra misteriosa com forma fluida, olhos brilhantes vermelhos, corpo feito de fumaça negra e roxa, pode assumir diferentes formas",
+      "personality": "Astuto, enigmático, não é puramente mau — tem motivações complexas",
+      "voiceProfile": {
+        "type": "Voz grave e reverberada, misteriosa",
+        "elevenlabsVoiceId": null,
+        "settings": {
+          "stability": 0.6,
+          "similarity_boost": 0.7,
+          "style": 0.8
+        }
+      },
+      "visualPrompt": "shadow entity villain, fluid dark smoke body, glowing red eyes, black and dark purple, mysterious and menacing, cartoon villain design, ethereal and shape-shifting",
+      "referenceImages": [],
+      "loraModel": null
+    },
+    {
+      "id": "char_006",
+      "name": "Zeca",
+      "role": "Amigo / Suporte cômico",
+      "age": 11,
+      "description": "Menino grande e forte mas gentil, cabelo raspado nas laterais com topete, camiseta verde de futebol, sempre comendo algo, mochila enorme",
+      "personality": "Gentil, medroso mas corajoso quando precisa, adora comer, leal",
+      "voiceProfile": {
+        "type": "Menino animado, voz grossa para a idade",
+        "elevenlabsVoiceId": null,
+        "settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.6
+        }
+      },
+      "visualPrompt": "large but gentle Brazilian boy, 11 years old, undercut hairstyle, green soccer t-shirt, always holding a snack, big backpack, cartoon style, friendly and slightly nervous expression",
+      "referenceImages": [],
+      "loraModel": null
+    }
+  ]
+}

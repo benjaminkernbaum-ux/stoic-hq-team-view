@@ -1,0 +1,51 @@
+{
+  "styleGuide": {
+    "name": "THIAGERA Visual Style",
+    "version": "1.0",
+    "type": "2D Cartoon Estilizado",
+    "influences": ["Cartoon Network", "Turma da Mônica Modern", "Hilda (Netflix)", "Gravity Falls"]
+  },
+  "colors": {
+    "primary": {
+      "purple": "#667eea",
+      "pink": "#f093fb",
+      "cyan": "#00f2fe"
+    },
+    "backgrounds": {
+      "sky_day": "#87CEEB → #4facfe",
+      "sky_sunset": "#fa709a → #fee140",
+      "sky_night": "#0c0c2e → #1a1a4e",
+      "indoor_warm": "#FFF8E7",
+      "indoor_cool": "#E8F0FE"
+    },
+    "characters": {
+      "skin_tones": ["#FDBCB4", "#E0A77E", "#C68642", "#8D5524", "#4A2511"],
+      "outline_color": "#2D2D2D",
+      "outline_weight": "2-3px at 1080p"
+    }
+  },
+  "art_direction": {
+    "line_style": "Clean, rounded, cartoon lines com espessura variável",
+    "shading": "Flat shading com sombras suaves (cel-shading leve)",
+    "proportions": "Personagens levemente estilizados — cabeças ~1.3x proporcionais",
+    "expressions": "Exageradas e expressivas — estilo cartoon ocidental",
+    "environments": "Ricos em detalhes, cores vibrantes, atmosfera acolhedora",
+    "animation_style": "Fluido, 24fps, com squash-and-stretch sutil"
+  },
+  "prompt_templates": {
+    "character_sheet": "Character design sheet, {character_description}, cartoon style, clean lines, vibrant colors, front view and 3/4 view, white background, professional character design, Cartoon Network style, Brazilian animation, cute and expressive",
+    "scene_background": "Cartoon background, {scene_description}, vibrant colors, clean art style, detailed environment, no characters, 16:9 aspect ratio, animation background art, Studio Ghibli meets Cartoon Network",
+    "animation_frame": "Animated cartoon frame, {action_description}, {character_name} in the scene, cartoon style, expressive pose, vibrant colors, Brazilian cartoon aesthetic, high quality animation cel",
+    "thumbnail": "YouTube thumbnail, {scene_description}, cartoon style, vibrant saturated colors, dramatic lighting, expressive character, bold composition, eye-catching, 1280x720"
+  },
+  "negative_prompts": {
+    "character": "realistic, photographic, 3d render, ugly, deformed, blurry, low quality, nsfw, violence, gore",
+    "background": "characters, people, realistic, photographic, blurry, low quality, watermark, text",
+    "animation": "static, still image, realistic, uncanny valley, jerky motion, low framerate"
+  },
+  "typography": {
+    "titles": "Outfit Bold",
+    "body": "Inter Regular",
+    "accent": "Fredoka One"
+  }
+}
