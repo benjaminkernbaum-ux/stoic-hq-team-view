@@ -7,7 +7,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{width:100%;height:100%;overflow:hidden;background:#f5efe6;font-family:'Inter',sans-serif;color:#2a2420}
+html,body{width:100%;height:100%;overflow:hidden;background:#1a1a2e;font-family:'Inter',sans-serif;color:#e0e0e0}
 canvas{display:block;width:100%;height:100%}
 
 /* ── SPEECH BUBBLES (HTML overlay) ── */
@@ -23,24 +23,24 @@ canvas{display:block;width:100%;height:100%}
 .bubble.coffee .bubble-inner::after{border-top-color:rgba(249,115,22,.12)}
 
 /* ── TOP BAR ── */
-#topBar{position:fixed;top:0;left:0;right:0;height:50px;background:linear-gradient(135deg,rgba(58,48,38,.94),rgba(42,36,30,.96));backdrop-filter:blur(20px);border-bottom:1px solid rgba(200,170,120,.4);display:flex;align-items:center;justify-content:space-between;padding:0 24px;z-index:100}
+#topBar{position:fixed;top:0;left:0;right:0;height:50px;background:linear-gradient(135deg,rgba(15,15,30,.92),rgba(25,20,45,.92));backdrop-filter:blur(20px);border-bottom:1px solid rgba(139,92,246,.3);display:flex;align-items:center;justify-content:space-between;padding:0 24px;z-index:100}
 #topBar .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:16px;font-family:'Outfit',sans-serif;letter-spacing:1.5px}
-#topBar .logo span{background:linear-gradient(135deg,#e8c88a,#c49a5c);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#topBar .logo span{background:linear-gradient(135deg,#a78bfa,#6d28d9);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 #topBar .logo .dot{width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 10px #22c55e;animation:pulse 2s infinite}
 #topBar .stats{display:flex;gap:20px;font-size:12px;color:#a0a0b0}
 #topBar .stats b{color:#fff;font-weight:700}
 
 /* ── DEPT TABS ── */
-#deptTabs{position:fixed;top:50px;left:0;right:0;height:40px;background:rgba(48,40,32,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,170,120,.2);display:flex;align-items:center;gap:4px;padding:0 16px;z-index:99}
+#deptTabs{position:fixed;top:50px;left:0;right:0;height:40px;background:rgba(12,12,24,.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;gap:4px;padding:0 16px;z-index:99}
 .dept-tab{padding:7px 16px;font-size:11px;font-weight:700;letter-spacing:.7px;border-radius:8px;cursor:pointer;transition:all .25s;color:#606080;text-transform:uppercase;white-space:nowrap;font-family:'Outfit',sans-serif}
-.dept-tab:hover{color:#f0e8d8;background:rgba(200,170,120,.2)}
-.dept-tab.active{color:#fff;background:linear-gradient(135deg,rgba(200,170,120,.35),rgba(180,140,80,.3));box-shadow:0 0 15px rgba(200,170,120,.25)}
-.dept-tab .cnt{display:inline-block;background:rgba(200,170,120,.4);color:#fff5e0;font-size:9px;padding:2px 6px;border-radius:10px;margin-left:6px;font-weight:800}
+.dept-tab:hover{color:#c0c0d0;background:rgba(139,92,246,.12)}
+.dept-tab.active{color:#fff;background:linear-gradient(135deg,rgba(139,92,246,.25),rgba(99,102,241,.2));box-shadow:0 0 15px rgba(139,92,246,.2)}
+.dept-tab .cnt{display:inline-block;background:rgba(139,92,246,.35);color:#e0d0ff;font-size:9px;padding:2px 6px;border-radius:10px;margin-left:6px;font-weight:800}
 
 /* ── AGENT PANEL ── */
-#agentPanel{position:fixed;right:16px;top:104px;width:320px;background:linear-gradient(160deg,rgba(48,40,32,.97),rgba(38,32,26,.97));backdrop-filter:blur(24px);border:1px solid rgba(200,170,120,.3);border-radius:16px;z-index:90;transform:translateX(360px);transition:transform .4s cubic-bezier(.4,0,.2,1);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+#agentPanel{position:fixed;right:16px;top:104px;width:320px;background:linear-gradient(160deg,rgba(20,16,35,.97),rgba(28,22,50,.97));backdrop-filter:blur(24px);border:1px solid rgba(139,92,246,.25);border-radius:16px;z-index:90;transform:translateX(360px);transition:transform .4s cubic-bezier(.4,0,.2,1);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)}
 #agentPanel.visible{transform:translateX(0)}
-.panel-header{padding:16px 18px;background:linear-gradient(135deg,rgba(200,170,120,.2),rgba(180,140,80,.12));border-bottom:1px solid rgba(200,170,120,.25);display:flex;align-items:center;justify-content:space-between}
+.panel-header{padding:16px 18px;background:linear-gradient(135deg,rgba(139,92,246,.18),rgba(99,102,241,.12));border-bottom:1px solid rgba(139,92,246,.2);display:flex;align-items:center;justify-content:space-between}
 .panel-header h3{font-size:15px;font-weight:800;font-family:'Outfit',sans-serif}
 .close-btn{width:30px;height:30px;border-radius:8px;background:rgba(255,255,255,.08);border:none;color:#a0a0b0;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;transition:all .2s}
 .close-btn:hover{background:rgba(239,68,68,.2);color:#ef4444}
@@ -52,31 +52,31 @@ canvas{display:block;width:100%;height:100%}
 .status-badge.active{background:rgba(34,197,94,.18);color:#4ade80}
 .status-badge.busy{background:rgba(245,158,11,.18);color:#fbbf24}
 .status-badge.idle{background:rgba(100,116,139,.18);color:#94a3b8}
-.task-card{background:rgba(200,170,120,.1);border:1px solid rgba(200,170,120,.2);border-radius:10px;padding:10px 12px;font-size:11px;line-height:1.5}
-.task-card .task-title{color:#c49a5c;font-weight:700;margin-bottom:3px}
+.task-card{background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.15);border-radius:10px;padding:10px 12px;font-size:11px;line-height:1.5}
+.task-card .task-title{color:#c4b5fd;font-weight:700;margin-bottom:3px}
 .task-card .task-desc{color:#8888a8}
 .progress-bar{height:5px;background:rgba(255,255,255,.06);border-radius:5px;overflow:hidden;margin-top:6px}
 .progress-bar .fill{height:100%;border-radius:5px;transition:width 1s ease}
 
 /* ── ACTIVITY LOG ── */
-#activityLog{position:fixed;left:16px;bottom:16px;width:350px;max-height:250px;background:linear-gradient(160deg,rgba(48,40,32,.96),rgba(38,32,26,.96));backdrop-filter:blur(20px);border:1px solid rgba(200,170,120,.22);border-radius:14px;z-index:90;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.25)}
-.log-header{padding:10px 14px;background:rgba(200,170,120,.12);border-bottom:1px solid rgba(200,170,120,.15);font-size:11px;font-weight:800;letter-spacing:1px;color:#e8c88a;font-family:'Outfit',sans-serif}
+#activityLog{position:fixed;left:16px;bottom:16px;width:350px;max-height:250px;background:linear-gradient(160deg,rgba(15,12,25,.94),rgba(22,18,40,.94));backdrop-filter:blur(20px);border:1px solid rgba(139,92,246,.18);border-radius:14px;z-index:90;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.log-header{padding:10px 14px;background:rgba(139,92,246,.1);border-bottom:1px solid rgba(139,92,246,.12);font-size:11px;font-weight:800;letter-spacing:1px;color:#a78bfa;font-family:'Outfit',sans-serif}
 .log-body{padding:8px;max-height:200px;overflow-y:auto;display:flex;flex-direction:column;gap:3px}
 .log-body::-webkit-scrollbar{width:3px}
-.log-body::-webkit-scrollbar-thumb{background:rgba(200,170,120,.4);border-radius:3px}
+.log-body::-webkit-scrollbar-thumb{background:rgba(139,92,246,.3);border-radius:3px}
 .log-entry{display:flex;align-items:flex-start;gap:8px;padding:5px 8px;border-radius:6px;font-size:10.5px;line-height:1.4}
-.log-entry .time{color:#c49a5c;font-family:'JetBrains Mono',monospace;font-size:9.5px;flex-shrink:0}
-.log-entry .aname{color:#e8c88a;font-weight:700;white-space:nowrap}
+.log-entry .time{color:#6366f1;font-family:'JetBrains Mono',monospace;font-size:9.5px;flex-shrink:0}
+.log-entry .aname{color:#c4b5fd;font-weight:700;white-space:nowrap}
 .log-entry .act{color:#9090a8}
 
 /* ── LEGEND ── */
-#legend{position:fixed;left:16px;top:104px;background:linear-gradient(160deg,rgba(48,40,32,.96),rgba(38,32,26,.96));backdrop-filter:blur(20px);border:1px solid rgba(200,170,120,.22);border-radius:12px;padding:12px;z-index:90;display:flex;flex-direction:column;gap:5px}
+#legend{position:fixed;left:16px;top:104px;background:linear-gradient(160deg,rgba(15,12,25,.94),rgba(22,18,40,.94));backdrop-filter:blur(20px);border:1px solid rgba(139,92,246,.18);border-radius:12px;padding:12px;z-index:90;display:flex;flex-direction:column;gap:5px}
 .leg-item{display:flex;align-items:center;gap:8px;font-size:10.5px;font-weight:600;color:#9090a8;cursor:pointer;padding:5px 10px;border-radius:8px;transition:all .2s}
-.leg-item:hover{background:rgba(200,170,120,.15);color:#f0e8d8}
+.leg-item:hover{background:rgba(139,92,246,.12);color:#e0e0e0}
 .leg-dot{width:12px;height:12px;border-radius:4px;flex-shrink:0}
 
 /* ── LOADING ── */
-#loading{position:fixed;inset:0;background:#3a3028;z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .6s}
+#loading{position:fixed;inset:0;background:#0e0e1a;z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .6s}
 #loading.hidden{opacity:0;pointer-events:none}
 #loading h1{font-size:32px;font-weight:900;font-family:'Outfit',sans-serif;background:linear-gradient(135deg,#a78bfa,#6d28d9,#4f46e5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px;letter-spacing:3px}
 #loading p{color:#606080;font-size:12px;letter-spacing:2px;margin-bottom:24px;font-family:'Outfit',sans-serif}
@@ -174,7 +174,7 @@ function Glow(c,i=.8){return new THREE.MeshStandardMaterial({color:c,emissive:c,
 
 function init(){
   scene=new THREE.Scene();
-  scene.background=new THREE.Color(0xf0e8d8);
+  scene.background=new THREE.Color(0x1e1e30);
 
   const a=window.innerWidth/window.innerHeight,d=26;
   cam=new THREE.OrthographicCamera(-d*a,d*a,d,-d,.1,500);
@@ -199,8 +199,8 @@ function init(){
 }
 
 function lights(){
-  scene.add(new THREE.AmbientLight(0xfff8ee,0.9));
-  scene.add(new THREE.HemisphereLight(0xffeedd,0xd4c4a0,.5));
+  scene.add(new THREE.AmbientLight(0x8888aa,.7));
+  scene.add(new THREE.HemisphereLight(0xaabbff,0x443322,.6));
   const sun=new THREE.DirectionalLight(0xfff5e0,1.0);
   sun.position.set(20,35,15);sun.castShadow=true;
   sun.shadow.mapSize.set(2048,2048);
@@ -222,7 +222,7 @@ function buildSign(text,color,w,h){
   const cv=document.createElement('canvas');cv.width=512;cv.height=128;
   const x=cv.getContext('2d');
   // Background plate
-  x.fillStyle='rgba(58,48,38,0.95)';x.beginPath();x.roundRect(8,8,496,112,16);x.fill();
+  x.fillStyle='rgba(20,16,35,0.95)';x.beginPath();x.roundRect(8,8,496,112,16);x.fill();
   // Color border
   const cs='#'+color.toString(16).padStart(6,'0');
   x.strokeStyle=cs;x.lineWidth=4;x.beginPath();x.roundRect(8,8,496,112,16);x.stroke();
@@ -245,22 +245,22 @@ function office(){
   const g=new THREE.Group();
 
   // FLOOR
-  const fl=B(50,.15,50,new THREE.MeshStandardMaterial({color:0xe8dcc8,roughness:.75}));
+  const fl=B(50,.15,50,new THREE.MeshStandardMaterial({color:0x2a2a40,roughness:.85}));
   fl.position.set(2,-.075,6);fl.receiveShadow=true;g.add(fl);
 
   // Floor tiles
-  const tm=Mat(0xddd0b8,.85);
+  const tm=Mat(0x30304a,.9);
   for(let x=-20;x<=24;x+=3)for(let z=-12;z<=28;z+=3){
     g.add(B(2.8,.04,2.8,tm).translateX(x).translateY(.01).translateZ(z));
   }
 
   // HALLWAY floor (lighter corridor running through center)
-  g.add(B(2,.06,42,Mat(0xc8b898,.7)).translateX(-.5).translateY(.03).translateZ(6));
-  g.add(B(42,.06,2,Mat(0xc8b898,.7)).translateX(2).translateY(.03).translateZ(1));
-  g.add(B(42,.06,2,Mat(0xc8b898,.7)).translateX(2).translateY(.03).translateZ(13));
-  // Hallway accent strips
-  g.add(B(.08,.04,42,Glow(0xc49a5c,.3)).translateX(-1.4).translateY(.05).translateZ(6));
-  g.add(B(.08,.04,42,Glow(0xc49a5c,.3)).translateX(.4).translateY(.05).translateZ(6));
+  g.add(B(2,.06,42,Mat(0x38385a,.8)).translateX(-.5).translateY(.03).translateZ(6));
+  g.add(B(42,.06,2,Mat(0x38385a,.8)).translateX(2).translateY(.03).translateZ(1));
+  g.add(B(42,.06,2,Mat(0x38385a,.8)).translateX(2).translateY(.03).translateZ(13));
+  // Hallway neon strips
+  g.add(B(.08,.04,42,Glow(0x6366f1,.3)).translateX(-1.4).translateY(.05).translateZ(6));
+  g.add(B(.08,.04,42,Glow(0x6366f1,.3)).translateX(.4).translateY(.05).translateZ(6));
 
   // ═══ DEPARTMENT CARPETS ═══
   Object.values(D).forEach(d=>{
@@ -275,22 +275,22 @@ function office(){
   });
 
   // ═══ EXTERIOR WALLS ═══
-  const wallMat=Mat(0xd8ccb4,.7);
+  const wallMat=Mat(0x22223a,.75);
   [[50,5.5,.3,2,2.75,-12],[50,5.5,.3,2,2.75,28],[.3,5.5,40,-22,2.75,8],[.3,5.5,40,26,2.75,8]]
   .forEach(w=>{const m=B(w[0],w[1],w[2],wallMat);m.position.set(w[3],w[4],w[5]);m.castShadow=true;g.add(m)});
 
   // Windows along north and south walls
   for(let x=-18;x<=22;x+=5){
-    g.add(B(3.5,2.5,.06,new THREE.MeshStandardMaterial({color:0x88bbdd,transparent:true,opacity:.25,roughness:.03}))
+    g.add(B(3.5,2.5,.06,new THREE.MeshStandardMaterial({color:0x6699cc,transparent:true,opacity:.2,roughness:.05}))
       .translateX(x).translateY(3.2).translateZ(-11.8));
-    g.add(B(3,2,.03,Glow(0xddeeff,.1)).translateX(x).translateY(3.2).translateZ(-11.75));
-    g.add(B(3.5,2.5,.06,new THREE.MeshStandardMaterial({color:0x88bbdd,transparent:true,opacity:.25,roughness:.03}))
+    g.add(B(3,2,.03,Glow(0xaaccff,.12)).translateX(x).translateY(3.2).translateZ(-11.75));
+    g.add(B(3.5,2.5,.06,new THREE.MeshStandardMaterial({color:0x6699cc,transparent:true,opacity:.2,roughness:.05}))
       .translateX(x).translateY(3.2).translateZ(27.8));
   }
 
   // ═══ INTERIOR WALLS — THICK with DOORS ═══
-  const iWall=Mat(0xc8bca4,.65);
-  const doorFrame=Mat(0xa89878,.35,.5);
+  const iWall=Mat(0x2a2a48,.65);
+  const doorFrame=Mat(0x555575,.3,.6);
 
   // ── HORIZONTAL WALL at z=1 (between row 1 and row 2) ──
   // Left section (x: -22 to -3) with door gap at x=-3 to -1
@@ -329,11 +329,14 @@ function office(){
   g.add(B(.25,4,14,iWall).translateX(-.5).translateY(2).translateZ(21));
 
   // Glass top on interior walls (frosted upper portion)
-  const glassTop=new THREE.MeshStandardMaterial({color:0xaaccdd,transparent:true,opacity:.15,roughness:.03});
-  g.add(B(19,1.2,.06,glassTop).translateX(-12.5).translateY(4.4).translateZ(1));
-  g.add(B(25,1.2,.06,glassTop).translateX(13.5).translateY(4.4).translateZ(1));
-  g.add(B(19,1.2,.06,glassTop).translateX(-12.5).translateY(4.4).translateZ(13));
-  g.add(B(25,1.2,.06,glassTop).translateX(13.5).translateY(4.4).translateZ(13));
+  g.add(B(19,1.2,.06,new THREE.MeshStandardMaterial({color:0x5566aa,transparent:true,opacity:.12,roughness:.05}))
+    .translateX(-12.5).translateY(4.4).translateZ(1));
+  g.add(B(25,1.2,.06,new THREE.MeshStandardMaterial({color:0x5566aa,transparent:true,opacity:.12,roughness:.05}))
+    .translateX(13.5).translateY(4.4).translateZ(1));
+  g.add(B(19,1.2,.06,new THREE.MeshStandardMaterial({color:0x5566aa,transparent:true,opacity:.12,roughness:.05}))
+    .translateX(-12.5).translateY(4.4).translateZ(13));
+  g.add(B(25,1.2,.06,new THREE.MeshStandardMaterial({color:0x5566aa,transparent:true,opacity:.12,roughness:.05}))
+    .translateX(13.5).translateY(4.4).translateZ(13));
 
   // ═══ DEPARTMENT NAME SIGNS (above doors) ═══
   const s1=buildSign('💻 DEVELOPMENT',0x6366f1);s1.position.set(-8,4.5,-14);g.add(s1);
@@ -374,29 +377,29 @@ function office(){
 // ═══ DESK ════════════════════════════════════════════════════
 function buildDesk(p,x,z,dc){
   const g=new THREE.Group();
-  g.add(B(2.4,.1,1.4,Mat(0xc8b898,.3)).translateY(1.1));
+  g.add(B(2.4,.1,1.4,Mat(0x5a5570,.35)).translateY(1.1));
   [[-1,-.55],[1,-.55],[-1,.55],[1,.55]].forEach(([lx,lz])=>
-    g.add(B(.06,1,.06,Mat(0xa89878,.3,.4)).translateX(lx).translateY(.55).translateZ(lz)));
+    g.add(B(.06,1,.06,Mat(0x666680,.3,.5)).translateX(lx).translateY(.55).translateZ(lz)));
   // Monitor
-  g.add(B(.25,.04,.18,Mat(0xa89878,.3,.4)).translateY(1.18).translateZ(-.35));
-  g.add(B(.05,.35,.05,Mat(0xa89878,.3,.4)).translateY(1.38).translateZ(-.35));
-  g.add(B(1.1,.7,.05,Mat(0x222222,.15)).translateY(1.7).translateZ(-.5));
+  g.add(B(.25,.04,.18,Mat(0x666680,.3,.5)).translateY(1.18).translateZ(-.35));
+  g.add(B(.05,.35,.05,Mat(0x666680,.3,.5)).translateY(1.38).translateZ(-.35));
+  g.add(B(1.1,.7,.05,Mat(0x111120,.2)).translateY(1.7).translateZ(-.5));
   g.add(B(1,.62,.02,new THREE.MeshStandardMaterial({color:dc,emissive:dc,emissiveIntensity:.5,transparent:true,opacity:.65}))
     .translateY(1.7).translateZ(-.47));
-  g.add(B(.6,.03,.2,Mat(0x2a2a2a,.4)).translateY(1.14).translateZ(.15));
-  g.add(B(.1,.03,.14,Mat(0x333333,.4)).translateX(.5).translateY(1.14).translateZ(.15));
+  g.add(B(.6,.03,.2,Mat(0x333348,.5)).translateY(1.14).translateZ(.15));
+  g.add(B(.1,.03,.14,Mat(0x444458,.5)).translateX(.5).translateY(1.14).translateZ(.15));
   // Coffee mug on desk
   g.add(C(.06,.12,Mat(dc,.4),8).translateX(-.9).translateY(1.22).translateZ(.3));
   // LED strip
   g.add(B(2.2,.03,.03,Glow(dc,.4)).translateY(1.07).translateZ(-.68));
   // Chair
   const ch=new THREE.Group();
-  ch.add(B(.6,.07,.5,Mat(0x3a3a3a,.55)).translateY(.7));
-  ch.add(B(.6,.6,.07,Mat(0x3a3a3a,.55)).translateY(1.05).translateZ(.25));
-  ch.add(C(.04,.65,Mat(0x888880,.3,.4)).translateY(.35));
+  ch.add(B(.6,.07,.5,Mat(0x333348,.6)).translateY(.7));
+  ch.add(B(.6,.6,.07,Mat(0x333348,.6)).translateY(1.05).translateZ(.25));
+  ch.add(C(.04,.65,Mat(0x666680,.3,.5)).translateY(.35));
   ch.add(B(.4,.04,.05,Glow(dc,.4)).translateY(1.38).translateZ(.26));
   for(let i=0;i<5;i++){const a=(i/5)*Math.PI*2;
-    ch.add(C(.04,.03,Mat(0x888880,.3,.4),8).rotateZ(Math.PI/2).translateX(Math.cos(a)*.22).translateY(.06).translateZ(Math.sin(a)*.22))}
+    ch.add(C(.04,.03,Mat(0x666680,.3,.5),8).rotateZ(Math.PI/2).translateX(Math.cos(a)*.22).translateY(.06).translateZ(Math.sin(a)*.22))}
   ch.position.set(0,0,.55);g.add(ch);
   g.position.set(x,0,z);p.add(g);
 }
@@ -409,9 +412,9 @@ function buildKitchen(p,x,z){
   const ks=buildSign('☕ KITCHEN',0xf97316);ks.position.set(0,4,0);g.add(ks);
 
   // Back wall / counter
-  const counterMat=Mat(0xc8bca4,.35);
-  // Long counter — marble top
-  g.add(B(5,.1,1,new THREE.MeshStandardMaterial({color:0xeee8dd,roughness:.12,metalness:.05})).translateY(1.32));
+  const counterMat=Mat(0x4a4a65,.35,.1);
+  // Long counter
+  g.add(B(5,.1,1,new THREE.MeshStandardMaterial({color:0x888899,roughness:.15,metalness:.2})).translateY(1.32));
   g.add(B(5,1.3,1,counterMat).translateY(.65));
 
   // ── FRIDGE (tall, silver/white with handle) ──
@@ -434,10 +437,10 @@ function buildKitchen(p,x,z){
 
   // ── COFFEE MACHINE (espresso style) ──
   const coffee=new THREE.Group();
-  coffee.add(B(.35,.5,.3,Mat(0x2a2a2a,.3)));
-  coffee.add(B(.37,.06,.32,Mat(0x333333,.3)).translateY(.28)); // top
+  coffee.add(B(.35,.5,.3,Mat(0x1a1a25,.3)));
+  coffee.add(B(.37,.06,.32,Mat(0x222235,.3)).translateY(.28)); // top
   coffee.add(C(.04,.35,Mat(0x888899,.2,.8),8).translateX(.12).translateZ(-.16)); // spout
-  coffee.add(B(.15,.03,.12,Mat(0x444444,.4)).translateY(-.15).translateZ(-.1)); // drip tray
+  coffee.add(B(.15,.03,.12,Mat(0x333345,.4)).translateY(-.15).translateZ(-.1)); // drip tray
   coffee.add(B(.04,.04,.02,Glow(0x22c55e,1.5)).translateX(-.1).translateY(.1).translateZ(-.16)); // power LED
   coffee.add(B(.04,.04,.02,Glow(0xff4444,1)).translateX(-.02).translateY(.1).translateZ(-.16)); // heat LED
   coffee.position.set(0,1.57,0);g.add(coffee);
@@ -452,14 +455,14 @@ function buildKitchen(p,x,z){
 
   // ── Upper cabinets on wall ──
   for(let cx=-2;cx<=1;cx+=1.2){
-    g.add(B(1,.7,.35,Mat(0xc8bca4,.45)).translateX(cx).translateY(2.5).translateZ(.3));
+    g.add(B(1,.7,.35,Mat(0x3a3a52,.5)).translateX(cx).translateY(2.5).translateZ(.3));
     g.add(B(.04,.15,.06,Mat(0x888899,.2,.8)).translateX(cx).translateY(2.5).translateZ(.1)); // handle
   }
 
   // ── Round dining table + stools ──
   const table=new THREE.Group();
-  table.add(C(.8,.06,Mat(0xc8b898,.3),12).translateY(1.05));
-  table.add(C(.06,.95,Mat(0xa89878,.3,.4)).translateY(.5));
+  table.add(C(.8,.06,Mat(0x5a5570,.3),12).translateY(1.05));
+  table.add(C(.06,.95,Mat(0x666680,.3,.5)).translateY(.5));
   // Items on table
   table.add(C(.05,.08,Mat(0xcc6633,.5),8).translateX(.2).translateY(1.12)); // cup
   table.add(C(.04,.06,Mat(0x22c55e,.5),8).translateX(-.3).translateY(1.11)); // another cup
@@ -469,9 +472,9 @@ function buildKitchen(p,x,z){
   for(let i=0;i<4;i++){
     const a=(i/4)*Math.PI*2+.3;
     const stool=new THREE.Group();
-    stool.add(C(.2,.06,Mat(0x3a3a3a,.45),8).translateY(.75));
-    stool.add(C(.04,.7,Mat(0xa89878,.3,.4)).translateY(.37));
-    stool.add(C(.18,.04,Mat(0xa89878,.3,.4),8).translateY(.05));
+    stool.add(C(.2,.06,Mat(0x444458,.5),8).translateY(.75));
+    stool.add(C(.04,.7,Mat(0x666680,.3,.5)).translateY(.37));
+    stool.add(C(.18,.04,Mat(0x666680,.3,.5),8).translateY(.05));
     stool.position.set(Math.cos(a)*1.2,0,-2.5+Math.sin(a)*1.2);
     g.add(stool);
   }
@@ -489,16 +492,16 @@ function buildLounge(p,x,z){
   // ── L-SHAPED SOFA (big, plush) ──
   const sofa=new THREE.Group();
   // Seat cushions
-  sofa.add(B(4,.45,1.2,Mat(0xb8a488,.7)).translateY(.45)); // main seat
-  sofa.add(B(1.2,.45,2.5,Mat(0xb8a488,.7)).translateX(1.4).translateY(.45).translateZ(-.65)); // L extension
+  sofa.add(B(4,.45,1.2,Mat(0x4a3a65,.75)).translateY(.45)); // main seat
+  sofa.add(B(1.2,.45,2.5,Mat(0x4a3a65,.75)).translateX(1.4).translateY(.45).translateZ(-.65)); // L extension
   // Backrest
-  sofa.add(B(4,.55,.25,Mat(0xa89470,.65)).translateY(.85).translateZ(.55));
-  sofa.add(B(.25,.55,2.5,Mat(0xa89470,.65)).translateX(2.05).translateY(.85).translateZ(-.65)); // side back
+  sofa.add(B(4,.55,.25,Mat(0x3a2a55,.7)).translateY(.85).translateZ(.55));
+  sofa.add(B(.25,.55,2.5,Mat(0x3a2a55,.7)).translateX(2.05).translateY(.85).translateZ(-.65)); // side back
   // Arm rests
-  sofa.add(B(.25,.35,1.2,Mat(0xa89470,.65)).translateX(-2.05).translateY(.55));
+  sofa.add(B(.25,.35,1.2,Mat(0x3a2a55,.7)).translateX(-2.05).translateY(.55));
   // Cushion details (lighter patches)
-  sofa.add(B(1.1,.08,1,Mat(0xc8b898,.65)).translateX(-.8).translateY(.7));
-  sofa.add(B(1.1,.08,1,Mat(0xc8b898,.65)).translateX(.5).translateY(.7));
+  sofa.add(B(1.1,.08,1,Mat(0x5a4a75,.7)).translateX(-.8).translateY(.7));
+  sofa.add(B(1.1,.08,1,Mat(0x5a4a75,.7)).translateX(.5).translateY(.7));
   // Throw pillows
   sofa.add(B(.35,.3,.15,Mat(0xec4899,.6)).translateX(-1.5).translateY(.85).translateZ(.35).rotateZ(.15));
   sofa.add(B(.35,.3,.15,Mat(0x6366f1,.6)).translateX(1.2).translateY(.85).translateZ(.35).rotateZ(-.1));
@@ -511,20 +514,20 @@ function buildLounge(p,x,z){
   // ── COFFEE TABLE (glass top, metal legs) ──
   const ct=new THREE.Group();
   ct.add(B(1.8,.06,.8,new THREE.MeshStandardMaterial({color:0x6688aa,transparent:true,opacity:.4,roughness:.05,metalness:.1})).translateY(.55)); // glass top
-  ct.add(B(1.6,.03,.6,Mat(0x888880,.3,.5)).translateY(.52)); // metal frame
+  ct.add(B(1.6,.03,.6,Mat(0x555575,.3,.6)).translateY(.52)); // metal frame
   [[-0.7,-.3],[.7,-.3],[-.7,.3],[.7,.3]].forEach(([lx,lz])=>
     ct.add(C(.03,.5,Mat(0x666680,.3,.7)).translateX(lx).translateY(.27).translateZ(lz)));
   // Items on table
-  ct.add(B(.25,.04,.18,Mat(0x444444,.4)).translateX(.3).translateY(.6)); // remote
+  ct.add(B(.25,.04,.18,Mat(0x333345,.4)).translateX(.3).translateY(.6)); // remote
   ct.add(C(.06,.1,Mat(0x6366f1,.5),8).translateX(-.4).translateY(.62)); // cup
   ct.add(B(.4,.03,.3,Mat(0xeeeeee,.3)).translateX(0).translateY(.59).translateZ(.15)); // magazine
   ct.position.set(0,0,-1.5);g.add(ct);
 
   // ── SMALL BOOKSHELF ──
   const bs=new THREE.Group();
-  bs.add(B(.8,1.8,.35,Mat(0xc8bca4,.5)));
+  bs.add(B(.8,1.8,.35,Mat(0x3a3a52,.6)));
   // Shelves
-  for(let sy=-.5;sy<=.5;sy+=.5){bs.add(B(.75,.04,.33,Mat(0xb8a890,.45)).translateY(sy))}
+  for(let sy=-.5;sy<=.5;sy+=.5){bs.add(B(.75,.04,.33,Mat(0x4a4a62,.5)).translateY(sy))}
   // Books
   for(let sy=-.4;sy<=.4;sy+=.5){
     for(let bx=-.25;bx<=.25;bx+=.12){
@@ -536,7 +539,7 @@ function buildLounge(p,x,z){
   bs.position.set(-4,.9,1);g.add(bs);
 
   // ── RUG under seating ──
-  g.add(B(6,.03,4.5,new THREE.MeshStandardMaterial({color:0xc8b898,transparent:true,opacity:.25,roughness:.95}))
+  g.add(B(6,.03,4.5,new THREE.MeshStandardMaterial({color:0x4a3a65,transparent:true,opacity:.2,roughness:.95}))
     .translateX(.5).translateY(.02).translateZ(-.5));
 
   g.position.set(x,0,z);p.add(g);
