@@ -277,8 +277,9 @@ function office(){
     g.add(B(z.w-0.4,.03,z.h-0.4,new THREE.MeshStandardMaterial({color:d.c,transparent:true,opacity:.22,roughness:.9}))
       .translateX(z.x+z.w/2).translateY(.055).translateZ(z.z+z.h/2));
     // Neon border on floor
-     [.12,.05,z.h,z.x,.04,z.z+z.h/2],[.12,.05,z.h,z.x+z.w,.04,z.z+z.h/2]]
-    .forEach(s=>{g.add(B(s[0],s[1],s[2],bm).translateX(s[3]).translateY(s[4]).translateZ(s[5]))});
+    const borderMat = Glow(d.c, .4);
+    [[.12,.05,z.h,z.x,.04,z.z+z.h/2],[.12,.05,z.h,z.x+z.w,.04,z.z+z.h/2]]
+      .forEach(s=>{g.add(B(s[0],s[1],s[2],borderMat).translateX(s[3]).translateY(s[4]).translateZ(s[5]))});
   });
 
   // ═══ EXTERIOR WALLS ═══
